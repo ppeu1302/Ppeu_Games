@@ -1,0 +1,104 @@
+
+
+
+
+.navbar{
+    background-color: #fff;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+
+.navbar-brand{
+    font-weight: 500;
+    color: #005c99;
+    font-size: 24px;
+}
+
+
+
+.login-button{
+    background-color: #005c99;  
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+.login-button:hover{
+    background-color: #0080b3;
+}
+
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active{
+    color: #000;
+}
+
+@media(min-width: 991px){
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #005c99;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+.nav-link:hover::before, .nav-link.active::before{
+    width: 100%;
+    visibility: visible;
+}
+
+
+.main-section{
+    background-image: linear-gradient(#000,#005c99);
+}
+
+
+.container{
+    padding-top:200px ;
+}
+
+.card{
+    margin-bottom: 16px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    font-size: 1.3em;
+    background-color: #005c99;
+    color: #fff;
+}
+
+.card-img-overlay{
+    background-color: rgba(0,0,0,0.5);
+}
+
+.btn-primary{
+    background-color: #005c99;
+    border: none;
+}

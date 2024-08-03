@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header id="cabecalho">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+            <a class="navbar-brand me-auto" href="#">Ppeu</a>
+            
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Ppeu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active mx-lg-2" aria-current="page" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                    <a class="nav-link mx-lg-2" href="#favorite-games">Games</a>
+                            </li>                    
+                        </ul>                
+                    </div>
+                </div>
+                <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-section" data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="home" class="container">
+            <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="3000" class="carousel-item active">
+                        <img class="d-block w-100" src="https://wallpapers.com/images/featured/elden-ring-6r85th0gnhifsqd0.jpg">
+                        <div class="carousel-caption">
+                            <h2>Elden Ring</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100"g src="https://wallpapercg.com/download/god-of-war-ragnar%C3%B6k-3840x2160-8636.jpg">
+                        <div class="carousel-caption">
+                            <h2>God of War <br> Ragnarök</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100"g src="https://wallpapers.com/images/featured/valorant-305kescxw5dpup7y.jpg">
+                        <div class="carousel-caption">
+                            <h2>Valorant</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100"g src="https://wallpaperswide.com/download/cyberpunk_2077_4k-wallpaper-3840x2160.jpg">
+                        <div class="carousel-caption">
+                            <h2>Cyberpunk 2077</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100"g src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjshriEV88n-Frr6NN40b5Yw64M5h4hTNSrVrVIGY3NSsW7aw1JnG3XdMS9U32GRNAOmBmR1JC1WO8aHuTy0RQUWtfR7CiHmN2eC8iwRVBRNMlTiFncUDub8EI-mw6U9__Krz0snCBNm36r/w2560-h1440-c/dying-light-2-poster-uhdpaper.com-8K-18.jpg">
+                        <div class="carousel-caption">
+                            <h2>Dying Light 2 <br> Stay Human</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100"g src="https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_WolfensteinTheNewOrder_MachineGames_S1_2560x1440-3a75b2c45a2a12e882feb2e2ff180b0c">
+                        <div class="carousel-caption">
+                            <h2>Wolfenstein <br> The New Order</h2>
+                        </div>
+                    </div>
+                </div>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="4"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="5"></button>
+                </div>
+            </div>
+        </section>
+        <section id="favorite-games" >
+            <div class="container align-items-center justify-content-center">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <article class="card text-bg-dark">
+                                <img src="https://preview.redd.it/ojv9a7z1zzy71.png?width=1080&crop=smart&auto=webp&s=6d875004fd73284ed5a7e7e439259847cb7e31bd">
+                                <div class="card-img-overlay">
+                                    <h4 class="card-title">Elden Ring</h4>
+                                    <p class="card-text">
+                                        ELDEN RING, developed by FromSoftware, Inc. and BANDAI NAMCO Entertainment Inc., is a fantasy action role-playing adventure set in a world created by Hidetaka Miyazak and George R. R. Martin. Danger and discovery lurk around every corner in FromSoftware’s biggest game to date.
+                                    </p>
+                                    <a href="#" class="btn btn-primary">More</a>
+                                </div>                              
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <article class="card text-bg-dark">
+                                <img src="./img/god-of-war-ragnarok-playstation-game-4k-phone-wallpaper-2160x3840-uhdpaper.com-730.1_b.jpg">
+                                <div class="card-img-overlay">
+                                    <h4 class="card-title">God of War <br> Ragnarök</h4>
+                                    <p class="card-text">
+                                        The Sony game, produced by Santa Monica Studio, brings the newest adventure of Kratos, the God of War, and his son, Atreus, trying to prevent the end of the Nine Realms, which is related to gods and entities from Norse mythology.
+                                    </p>
+                                    <a href="#" class="btn btn-primary">More</a>
+                                </div>                              
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <article class="card text-bg-dark">
+                                <img src="https://i.pinimg.com/originals/54/07/cd/5407cd7d9b10d751ebdbdd869e5a03dd.jpg">
+                                <div class="card-img-overlay">
+                                    <h4 class="card-title">Valorant</h4>
+                                    <p class="card-text">
+                                        You’ll have 13 rounds to attack and defend with accurate shooting and tactical skills. With only one life per round, you’ll need to outthink your opponent if you want to survive. Take on enemies in Competitive and Unranked modes, as well as Spike Rush and Deathmatch!
+                                    </p>
+                                    <a href="#" class="btn btn-primary">More</a>
+                                </div>                              
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <article class="card text-bg-dark">
+                                <img src="./img/cyberpunk-2077-samurai-logo-uhdpaper.com-4K-mobile-104.jpg">
+                                <div class="card-img-overlay">
+                                    <h4 class="card-title">Cyberpunk 2077</h4>
+                                    <p class="card-text">
+                                        Cyberpunk 2077 is an open-world action-adventure story set in Night City, a megalopolis obsessed with power, glamour, and body modification. Play as V, a cyberpunk mercenary, and face off against the city's most powerful forces in a fight for glory and survival.
+                                    </p>
+                                    <a href="#" class="btn btn-primary">More</a>
+                                </div>                              
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <article class="card text-bg-dark">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjshriEV88n-Frr6NN40b5Yw64M5h4hTNSrVrVIGY3NSsW7aw1JnG3XdMS9U32GRNAOmBmR1JC1WO8aHuTy0RQUWtfR7CiHmN2eC8iwRVBRNMlTiFncUDub8EI-mw6U9__Krz0snCBNm36r/w1080-h1920-p/dying-light-2-poster-uhdpaper.com-8K-18.jpg">
+                                <div class="card-img-overlay">
+                                    <h4 class="card-title">Dying Light 2 <br>Stay Human</h4>
+                                    <p class="card-text">
+                                        Twenty years have passed since the events of the original game. The virus has won and humanity is slowly dying out. You play as Aiden Caldwell, a wandering pilgrim who transports goods, brings news and connects the remains of survivor settlements in the lands ravaged by the zombie virus...
+                                    </p>
+                                    <a href="#" class="btn btn-primary">More</a>
+                                </div>                              
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <article class="card text-bg-dark">
+                                <img src="https://images.hdqwalls.com/download/wolfenstein-the-new-order-hd-1440x2560.jpg">
+                                <div class="card-img-overlay">
+                                    <h4 class="card-title">Wolfenstein <br> The New Order</h4>
+                                    <p class="card-text">
+                                        Wolfenstein: The New Order reinvigorates the series that created the first-person shooter genre. Set in an alternate reality in the 1960s, you’ll discover an uncharted world ruled by a familiar enemy who has managed to change the course of history as you know it.
+                                    </p>
+                                    <a href="#" class="btn btn-primary">More</a>
+                                </div>                              
+                            </article>
+                        </div>
+                    </div>
+    
+            </div>
+        </section>
+    </main>
+    
+
+
+
+
+
+    <footer>
+        <p>
+            2024 &copy; By Pedro Moreira
+        </p>
+    </footer>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
